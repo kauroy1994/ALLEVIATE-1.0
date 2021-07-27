@@ -13,6 +13,8 @@ class Node(object):
         self.pos = pos
         self.depth = depth
         self.parent = parent
+        self.cost = 1 #uniform cost
+        self.heuristic = (5 - self.depth) + int(self.pos == "left") + (int(self.pos == "root")*10) 
 
     def get_id(self):
         '''get id label for node'''
