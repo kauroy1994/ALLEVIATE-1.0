@@ -16,7 +16,7 @@ def main():
                 node_to_expand = node
         
         path.append(str(node_to_expand))
-        answered = int(random() < 0.5)
+        answered = int(random() < 0.8)
         path.append(answered)
         if node_to_expand.left == None or node_to_expand.right == None:
             break
